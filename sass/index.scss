@@ -1,0 +1,120 @@
+@import 'reset';
+@import 'define';
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: Lato, sans-serif;
+    color: #222;
+    font-size: 0.9em; 
+}
+
+main{
+    @extend %df;
+    flex: 1 0 auto;
+}
+
+aside{
+    @extend %df;
+    flex: 0 0 40px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #f2f2f2;
+    i.fa{
+        font-size: .9em;
+    }
+}
+
+.content{
+    @extend %df;
+    flex: 1 0 auto;
+    flex-direction: column;
+    .music-head{
+        padding: 40px;
+        flex: 0 0 280px;
+        @extend %df;
+        background: #4e4e4e;
+    }
+    .catty-music{
+        @extend %df;
+        flex: 1 0 auto;
+        flex-direction: column;
+        font-weight: 300;
+        color: #fff;
+        padding-left: 50px;
+    }
+    div{
+        &:nth-child(1){
+            margin-bottom: auto;
+            p{
+                &:nth-child(1){
+                    font-size: 1.8em;
+                    margin: 0 0 10px;
+                }
+                &:not(:first-child){
+                    font-size: .9em;
+                    margin: 2px 0;
+                }
+            }
+        }
+        &:nth-child(2){
+            i.fa{
+                font-size: .9em;
+                padding: 0 .7em;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .music-list{
+        flex: 1 0 auto;
+        padding: 5px 10px 0;
+        li{
+            padding: 0 20px;
+            min-height: 50px;
+            @extend %df;
+            &:nth-child(2n){
+                background: #f2f2f2;
+            }
+            p{
+                flex: 0 0 25%;
+            }
+        }
+    }
+}
+
+footer{
+    @extend %df;
+    padding: 10px;
+    flex: 0 0 90px;
+    @extend %cfff;
+    background: rgba(61, 100, 158, .9);
+}
+
+.catty-music-small{
+    @extend %df;
+    margin-right: auto;
+    img{
+        padding-right: 10px;
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
