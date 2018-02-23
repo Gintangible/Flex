@@ -77,9 +77,11 @@ aside{
     .music-list{
         flex: 1 0 auto;
         padding: 5px 10px 0;
+        margin: 1em 0;
         li{
             padding: 0 20px;
             min-height: 50px;
+            line-height: 50px;
             @extend %df;
             &:nth-child(2n){
                 background: #f2f2f2;
@@ -106,8 +108,17 @@ footer{
         padding-right: 10px;
         width: 100px;
     }
+    p{
+        margin: 1em 0;
+    }
 }
 
+.catty-music-controls{
+    @extend %df;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
